@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+uv.lock
+
+# Models & Data
+*.gguf
+*.bin
+*.safetensors
+models/
+data/gsm_symbolic/
+data/gsm_noop/
+experiments/results/
+*.npy
+*.pt
+*.pt.trace
+
+# Logs & Outputs
+wandb/
+*.log
+*.yaml
+metrics.yaml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Checkpoints
+checkpoints/
+*.ckpt

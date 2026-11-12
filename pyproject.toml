@@ -1,0 +1,36 @@
+[project]
+name = "mc-irf"
+version = "0.1.0"
+description = "Mutual Consistency as Implicit Relevance Filter: GSM-NoOp Defense"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.3",
+    "transformers>=4.40",
+    "accelerate>=0.30",
+    "peft>=0.11",
+    "bitsandbytes>=0.43",
+    "llama-cpp-python>=0.2.90",
+    "vllm>=0.5",
+    "datasets>=2.19",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+    "wandb>=0.17",
+    "hf-transfer>=0.1",
+    "einops>=0.8",
+    "scipy>=1.13",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.2",
+    "ruff>=0.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
